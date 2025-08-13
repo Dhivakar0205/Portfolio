@@ -1,0 +1,161 @@
+
+{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Poppins',sans-serif;
+  color:#222;
+  background:#fff;
+  line-height:1.45;
+}
+
+header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:20px 48px;
+}
+.logo{
+  font-weight:800;
+  font-size:22px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.logo-square{
+  background:royalblue;
+  color:#fff;
+  padding:8px 10px;
+  border-radius:6px;
+  font-weight:800;
+  display:inline-block;
+}
+
+/* nav */
+.nav-links a{
+  margin:0 14px;
+  text-decoration:none;
+  color:#222;
+  font-weight:500;
+}
+.cv-btn{
+  background:royalblue;
+  color:#fff;
+  padding:8px 12px;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:600;
+}
+
+/* Social sidebar - rounded pill with icons */
+.social{
+  position:fixed;
+  left:14px;
+  top:38%;
+  background:royalblue;
+  border-radius:28px;
+  padding:10px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  z-index:30;
+}
+
+/* Each icon link style */
+.social a{
+  display:inline-flex;
+  width:44px;
+  height:44px;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  text-decoration:none;
+  font-size:18px;
+  transition:transform .16s ease, background .16s ease;
+  background:transparent; /* keep icons on royalblue background */
+  border-radius:50%;
+}
+.social a:hover{
+  transform:translateX(6px);
+  filter:brightness(.95);
+}
+
+/* Hero Section */
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:72px 80px;
+  gap:30px;
+  flex-wrap:wrap;
+  min-height:76vh;
+}
+.hero-text{
+  max-width:640px;
+}
+.hero-text h4{
+  font-size:18px;
+  color:#333;
+  margin-bottom:6px;
+}
+.hero-text h1{
+  font-size:64px;
+  color:royalblue;
+  line-height:1;
+  margin-bottom:6px;
+}
+.hero-text h2{
+  font-size:30px;
+  color:#111;
+  margin-bottom:12px;
+  font-weight:700;
+}
+.hero-text p{
+  color:#333;
+  margin-bottom:20px;
+}
+
+/* Buttons */
+.hire-btn{
+  background:royalblue;
+  color:#fff;
+  padding:12px 18px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:700;
+}
+
+/* Image area */
+.hero-image{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-width:320px;
+}
+.hero-image img{
+  width:360px;
+  height:auto;
+  border-radius:28px;
+  object-fit:cover;
+  box-shadow: 0 20px 50px rgba(50,50,93,0.12);
+  /* subtle royalblue accent border */
+  border: 8px solid rgba(65,105,225,0.08);
+  background: #fff;
+}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero{
+    padding:40px 28px;
+  }
+  .hero-text h1{font-size:44px;}
+  .hero-image img{width:280px}
+  .social{left:8px}
+}
+@media (max-width:600px){
+  .nav-links{display:none}
+  .cv-btn{display:none}
+  .social{display:none}
+  .hero{padding:28px}
+  .hero-text h1{font-size:36px}
+  .hero-image img{width:220px}
+}
